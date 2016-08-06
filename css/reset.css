@@ -1,0 +1,211 @@
+body, html {
+  margin: 0;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 100%;
+}
+
+main, section, aside, figure, footer, header, article, nav, menu, fieldset, .row {
+    display: block;
+}
+
+.container-fluid {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.row {
+
+}
+
+div {
+  display: block;
+
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4 {
+    margin: 0 2px;
+    overflow: hidden;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+
+}
+
+
+.clearfix {
+  clear: both;;
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+.container-fluid {
+  min-width: 1200px;
+  margin: 2px 5px;
+}
+
+.row {
+  min-width: 1200px;
+  height: auto;
+}
+.col-md-4 {
+left: 89%;
+}
+.col-md-3
+left: 85%;
+}
+.col-md-2 {
+left: 81%;
+}
+.col-md-1 {
+left: 77%;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4 {
+  margin: 0 2px;
+  overflow: hidden;
+  float: left;
+  position: relative;
+  width: 21%;
+}
+
+img, video, audio {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+ul li {
+    list-style: none;
+    display: inline;
+}
+
+.navbar {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: aqua;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+figure {
+    margin: 1em 40px;
+}
+
+button, input, select, textarea {
+    font: inherit;
+}
+
+button {
+  border-radius: 3px;
+min-height: 40px;
+line-height: 40px;
+}
+
+fieldset {
+    border: 1px solid #252525;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    display: table;
+    max-width: 100%;
+    padding:
+}
+
+form {
+    padding: 2px 4px;
+}
+
+textarea {
+line-height: .5em;
+    overflow: auto;
+}
+
+
+[type="checkbox"], [type="radio"] {
+    padding: 0;
+}
+
+footer {
+  clear: both;
+  width: 100%;
+  float: left;
+}
+
+/*media queries */
+/* Landscape phones and down */
+@media (max-width: 480px) { ... }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { ... }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .col-md-4 {
+    width: 25%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-2 {
+    width: 25%;
+  }
+  .col-md-1 {
+    width: 25%;
+  }
+
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4 {
+      margin: 0 2px;
+      overflow: hidden;
+      float: left;
+      position: relative;
+      width: 21%;
+  }
+ }
+
+/* Large desktop */
+@media (min-width: 1200px) {
+.container-fluid {
+    min-width: 1200px;
+    margin: 2px 5px;
+}
+
+.row {
+    min-width: 1200px;
+    height: auto;
+}
+.col-md-4 {
+  left: 89%;
+}
+.col-md-3
+  left: 85%;
+}
+.col-md-2 {
+  left: 81%;
+}
+.col-md-1 {
+  left: 77%;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4 {
+    margin: 0 2px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    width: 21%;
+}
+}
