@@ -3,7 +3,7 @@ body, html {
     font-family: sans-serif;
     font-size: 100%;
 }
-.img-responsive, main, section, aside, figure, footer, header, article, nav, menu, fieldset {
+main, section, aside, figure, footer, header, article, nav, menu, fieldset {
     display: block;
 }
 
@@ -11,6 +11,9 @@ body, html {
     clear: both;
 }
 
+a {
+  text-decoration: none;
+}
 
 /*Header parallax scroll*/
 .parallax {
@@ -114,11 +117,6 @@ figure {
 
 /* Navigation */
 /* menu*/
-.menu-img img {
- max-width: 60px;
- cursor: pointer;
-}
-
 .menu-img {
   position: absolute;
   display: inline-block;
@@ -128,48 +126,42 @@ figure {
   right: 30px;
 }
 
+.dropbtn {
 
-#menu {
-  position: absolute;
-    top: 0;
-    left: 0;
-    width: 30%;
-    height: 100%;
-    z-index: 1500;
-    color: #fff;
-    display: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
 }
 
-nav {
-  font-family: sans-serif;
-  margin: 8px auto;
+
+
+.menu-img:hover .dropdown-content {
+    display: block;
 }
 
-#menu-img span a {
-  display: block;
-  text-decoration: none;
-}
-
-.navbar {
-  position: absolute;
+.dropdown-content {
   display: none;
-  background-color: #252525;
-  min-width: 20%;
-  padding: 12px 16px;
+   position: absolute;
+   right: 0;
+   background-color: #f9f9f9;
+   min-width: 160px;
+   margin-top: 0;
 }
 
-.navbar:focus, .navbar {
+.dropdown-content li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.dropdown-content:hover .dropdown-content {
   display: block;
 }
 
-.navbar ul li a {
-  text-decoration: none;
+dropdown-content:hover .dropbtn {
+  background-color: #3e8e41;
+  padding: 0;
 }
 
-.navbar ul li {
-  list-style: none;
-  display: inline;
-}
 
 /*media queries */
 

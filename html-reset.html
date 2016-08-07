@@ -2,10 +2,7 @@
 <html lang="en">
 
 <head>
-
-<meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
     <title>HTML reset</title>
     <link href="css/reset.css" rel="stylesheet" />
 </head>
@@ -21,14 +18,13 @@
             </div>
             <!-- logo in left corner-->
         </header>
-      <nav>
-          <div class="menu-img" id="menu-img" tabindex="0" class="onclick-menu">
-              <span><a href="#menu"><img class="img-responsive" src="images/menu.svg" alt="menu"/></a></span>
-                    <ul class="navbar onclick-menu-content" id="menu"> <!-- expand menu -->
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Contact</a></li>
+          <nav class="menu-img">
+              <span><a href="#" class="dropbtn"><img class="img-responsive" src="images/menu.svg" alt="menu"/></a></span>
+                    <ul class="dropdown-content" id="menu"> <!-- expand menu -->
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
-                </div>
+
                 </nav>
         </div>
 
@@ -37,7 +33,7 @@
 
             <h1>This is h1</h1>
 
-            <section>
+            <section id="home">
                 <h2>This is the form</h2>
                 <form>
                     <div class="container4">
@@ -46,25 +42,24 @@
                             <fieldset>
                                 <label>Name:</label>
                                 <input>
-                            </fieldset>
-                            <fieldset>
+
                                 <label>Gender:</label>
                                 <label style="display:hidden">Female</label>
                                 <input type="radio">Female
                                 <labelstyle="display:hidden">Male</label>
                                     <input type="radio">Male
-                            </fieldset>
-                            <fieldset>
+
                                 <label></label>
                                 <input type="checkbox">Female
                                 <input type="checkbox">Male
-                            </fieldset>
+
                             <select>
                                 <option>Yes</option>
                                 <option>No</option>
                             </select>
                             <textarea>Input text:</textarea>
                             <button type="submit">Click Me!</button>
+                              </fieldset>
                         </legend>
                     </div>
                 </form>
@@ -112,7 +107,7 @@
         </div>
     </div>
     </main>
-    <footer>
+    <footer id="contact">
         <div class="container-fluid">
             <div class="container4">
                 <div class="col-md-4">
